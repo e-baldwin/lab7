@@ -1,6 +1,6 @@
 let airports
 
-//function fetchData(){
+function fetchData(){
 	fetch('/airports.json')//'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3df9fab6-45a1-43ed-8f89-1d3ba6735d1c/airports.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211020%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211020T203444Z&X-Amz-Expires=86400&X-Amz-Signature=107196f61b544a6fdf497800f5f485ec94fcfc6e64e5cfc0bb74fb76c2ce081c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22airports.json%22')
     	.then(response => response.json())
     	.then(data => {
@@ -138,3 +138,5 @@ function switchLayout() {
 	  }
   }
   })
+}
+fetchData();
