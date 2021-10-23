@@ -1,0 +1,14 @@
+
+
+#button{
+    background-color: blue;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+#button:active{
+    background-color: black;
+}
+#button:focus{
+    background-color: black;
+}
